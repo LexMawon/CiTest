@@ -1,9 +1,9 @@
 #include <stdio.h>
+//Сортировка массива методом пузырька
 
 int main()
 {
 int a[6]={1,5,3,8,0,2}; 
-int f[6];
 for (int i = 0; i < 6; i++) 
 for (int j = 6; j > i; j--){
     if (a[j - 1] > a[j]) {
@@ -13,9 +13,7 @@ for (int j = 6; j > i; j--){
       }
    }
 for (int i = 0; i<6; i++){
-		//if (a[i]>0){
-		f[i]=a[i];
-	printf("%d ", f[i]);
+	printf("%d ", a[i]);
 }
   return 0;
 }
