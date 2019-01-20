@@ -1,22 +1,18 @@
 #include<stdio.h>
+// Клинорование массива
 
 int main() {
+	
+int b[6]={3,3,6,8,4,1};
+int p[6];
 
-   int i;
-   int b[4]={3,3,6,8};
-   int p[4];
-
-   for(i=0;i<4;i++) {
-      if(b[i]!=0) {
-         p[i]=b[i];
-        
-      }
+for(int i=0;i<6;i++) {
+	if(b[i]!=0) {
+		p[i]=b[i];
+        }
    }
+for(int i=0;i<6;i++)
+    printf( "%d ",p[i]);
 
-    for(i=0;i<4;i++)
-      printf( "%d ",p[i]);
-
-
-   return 0;
-
+return 0;
 }
